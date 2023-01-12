@@ -1,0 +1,139 @@
+
+.experiencias{
+    display: flex;
+    flex-direction: column;
+    padding:0 25px;
+}
+.cuerpo-experiencia{
+    background-color: var(--color-descripcion-perfil);
+    color: var(--color-defondo);
+    
+    border-radius: 10px;
+}
+
+
+.titulo-experiencia{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 30px;
+    margin: 25px;
+}
+
+.fecha-experiencia{
+    font-size: 25px;
+    font-weight: bold;
+    color: var(--color-date-experiencias);
+}
+
+.empresa-experiencia{
+    font-size: 20px;
+    text-transform: uppercase;
+    margin-top: 5px;
+}
+
+
+.posicion-experiencia{
+    font-weight: 500;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.descripcion-experiencia{
+    font-weight: 400;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.experiencia{
+    padding: 25px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+
+@media (min-width:950px){
+
+    .titulo-experiencia{
+        font-size: 45px;
+        margin: 35px 0;
+    }
+    
+    .fecha-experiencia{
+        font-size: 40px;
+    }
+    
+    .empresa-experiencia{
+        font-size: 25px;
+    }
+    
+    
+    .posicion-experiencia{
+        font-weight: bold;
+        font-size: 20px;
+        margin-top: 20px;
+    }
+    
+    .descripcion-experiencia{
+        font-size: 20px;
+        margin-top: 10px;
+        line-height: 1.3;
+    }
+
+    
+    .experiencias-grid{
+        display: grid;
+        grid-template-columns: auto 2px auto;
+        gap:18px 70px;
+        padding: 70px;
+        justify-content: center;
+        max-width: 980px;
+        margin: 0 auto;
+    }
+
+    .experiencia{
+        padding: 0;
+    }
+    
+    
+    .experiencia-izquierda{
+        text-align: right;
+
+    }
+
+    .linea{
+        background-color: var(--color-defondo);
+        position: relative;
+        
+        
+    }
+    .linea::before,
+    .linea::after{
+    content: "";
+    display: block;
+    width: 18px;
+    height: 18px;
+    background-color:var(--color-defondo);
+    border-radius: 50%;
+    position: absolute;
+    top: -18px;
+    left: -8px;
+    
+    }
+
+    
+    .linea::after{
+    content: "";
+    display: block;
+    width: 18px;
+    height: 18px;
+    background-color:var(--color-defondo);
+    border-radius: 50%;
+    position: absolute;
+    top: 100%;
+    left: -8px;
+    
+    }
+}
+
+

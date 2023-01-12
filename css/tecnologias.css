@@ -1,0 +1,49 @@
+.tecnologias{
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+.titulo-tecnologias{
+font-size: 30px;
+font-weight: bold;
+text-transform: uppercase;
+text-align: center;
+}
+
+.tecnologias-tecnologia{
+    background-color:var(--color-tecnologias-background);
+    box-shadow: 0 4px 10px;
+    text-transform: uppercase;
+    border:none;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0.5em 0.7em;
+    margin:10px
+    
+}
+
+.lista-tecnologias{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+
+@media(min-width:950px){
+    .titulo-tecnologias{
+        font-size: 45px;
+        }
+        
+        .tecnologias-tecnologia{
+            text-transform: uppercase;
+            box-shadow: 0 4px 10px;
+            font-size: 25px;
+            font-weight: 500;
+            padding: 0.5em 0.7em;
+            margin:25px
+            
+        }
+}
